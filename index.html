@@ -16,9 +16,26 @@
                 font-family: "Pretendard",serif;
             }
           body {
-            background-color: #44398A;
+            background-image: url('제주.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+
+          } 
+          .box{
+            position: absolute;
+
+            width:  300px;
+            height: 125px;
+            background-color: hsla(0, 27%, 96%, 0.3);
+            background-position: center;
+            top: 15px; 
+            margin: 4px;
+
           } 
           .profile {
+
+            position: relative;
+
             width:  100px;
             height: 100px;
 
@@ -27,18 +44,33 @@
 
             border : 2px solid white;
 
-            background-image: url("크림이.png");
+            background-image: url('크림이.png');
             background-position: center;
             background-size: cover;
+            background-repeat:space;
           }
 
+
+
           .main {
+            width:  300px;
+            height: 50px;
+
+            background-color: hsla(0, 27%, 96%, 0.3);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+
             color: white;
             font-size: 20px;
 
-            margin-top: 30px;
+            margin-top: 10px;
             margin-bottom: 10px; 
-            margin-bottom: 30px;
+            margin-bottom: 10px;
           }
 
           .sub {
@@ -95,7 +127,9 @@
         </style>
     </head>
     <body>
+      
         <div class="wrap">
+            <div class="box"></div>
             <div class="profile"></div>
             <h1 class="main">Creamchagok</h1>
             <P Class="sub">반려견 크림이와 추억을 차곡차곡:)</P>
